@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/ad42651166.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Prompt' rel='stylesheet' type='text/css'>
+
+    <title>แบบฟอร์มส่งเอกสารมอบตัวออนไลน์</title>
+
+    <style type='text/css'>
+        .prompt {
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            font-family: 'Prompt' !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <h4 class="prompt text-white">แบบฟอร์มส่งเอกสารมอบตัวออนไลน์</h4>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://reg.saard.ac.th/" target="_blank"><i class="fas fa-home mr-2"></i> เว็บไซต์งานรับนักรียนโรงเรียนสอาดเผดิมวิทยา</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <br>
+        <div class="container">
+            <div class="card text-black mb-12" style="max-width: 100rem; background-color: #FADBD8">
+                <h2 class="card-header prompt">ขั้นตอนการส่งเอกสารมอบตัวออนไลน์</h2>
+                <div class="card-body">
+                    <p class="card-text mali">
+                    <ul>
+                        <li>เตรียมไฟล์เอกสารพร้อมรับรองสำเนาถูกต้อง เอกสารทั้งหมดให้เรียบร้อย</li>
+                        <li>ประกอบด้วย 1.หลักฐานการชำระเงิน 2.สำเนาทะเบียนบ้านนักเรียน 3.สำเนาทะเบียนบ้านของบิดา 4.สำเนาทะเบียนบ้านของมารดา</li>
+                        <li>หากไม่มีทะเบียนบ้านของบิดาหรือมารดา ให้ใช้สูจิบัตรแทน</li>
+                        <li>เลือกระดับชั้นให้ตรงกับที่นักเรียนมอบตัว</li>
+                        <li>กรอกชื่อ-นามสกุลนักเรียนให้สมบูรณ์</li>
+                        <li>เลือกไฟล์ที่นักเรียนจะอัพโหลดให้ครบทุกไฟล์</li>
+                        <li>คลิกส่งเอกสารการมอบตัวทั้งหมด แล้วรออัปโหลดไฟล์ </li>
+                        <li>เมื่ออัปโหลดเรียบร้อย จะมีข้อความแสดงว่า ส่งเอกสารเรียบร้อยแล้ว</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- กรอกข้อมูล -->
+    <div class="container">
+        <form id="myForm" class="needs-validation" novalidate>
+            <div class="row">
+                <div class="col-md-4">
+                    <label class="form-label">เลือกระดับชั้น</label>
+                    <select name="myClass" class="form-select" required>
+                        <option value="" disabled selected>เลือก..</option>
+                        <option value="ม.1/5">ม.1/5</option>
+                        <option value="ม.1/6">ม.1/6</option>
+                        <option value="ม.1/7">ม.1/7</option>
+                        <option value="ม.1/8">ม.1/8</option>
+                        <option value="ม.1/9">ม.1/9</option>
+                        <option value="ม.1/10">ม.1/10</option>
+                        <option value="ม.4/5">ม.4/5</option>
+                        <option value="ม.4/6">ม.4/6</option>
+                        <option value="ม.4/7">ม.4/7</option>
+                        <option value="ม.4/8">ม.4/8</option>
+                        <option value="ม.4/9">ม.4/9</option>
+                        <option value="ม.4/10">ม.4/10</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        กรุณาเลือก ระดับชั้น
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-2">
+                    <label for="myID" class="form-label">เลขประจำตัวประชาชน</label>
+                    <input type="text" class="form-control" name="myID" id="myID" required>
+                    <div class="invalid-feedback">
+                        กรุณากรอกเลขประจำตัวประชาชน
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 col-md-4 mt-2">
+                    <label class="form-label">คำนำหน้าชื่อ</label>
+                    <select name="myPreflix" class="form-select" required>
+                        <option value="" disabled selected>เลือก..</option>
+                        <option value="เด็กชาย">เด็กชาย</option>
+                        <option value="เด็กหญิง">เด็กหญิง</option>
+                        <option value="นาย">นาย</option>
+                        <option value="นางสาว์">นางสาว</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        กรุณาเลือก คำนำหน้าชื่อ
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 mt-2">
+                    <label for="myName" class="form-label">ชื่อ</label>
+                    <input type="text" class="form-control" name="myName" id="myName" required>
+                    <div class="invalid-feedback">
+                        กรุณากรอกชื่อ
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 mt-2">
+                    <label for="mySurName" class="form-label">นามสกุล</label>
+                    <input type="text" class="form-control" name="mySurName" id="mySurName" required>
+                    <div class="invalid-feedback">
+                        กรุณากรอกนามสกุล
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-1">
+                    <label class="form-label">เลือกไฟล์หลักฐานการชำระเงินบำรุงการศึกษา (นักเรียนโควตาที่ยืนยันสิทธิ์แล้วไม่ต้องแนบ)</label>
+                    <input type="file" name="myFile1" class="form-control" >
+                    <div class="invalid-feedback">
+                        กรุณาอัพโหลดไฟล์หลักฐานการชำระเงินบำรุงการศึกษา
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-2">
+                    <label class="form-label">เลือกไฟล์สำเนาทะเบียนบ้านของนักเรียน</label>
+                    <input type="file" name="myFile2" class="form-control" required>
+                    <div class="invalid-feedback">
+                        กรุณาอัพโหลดไฟล์สำเนาทะเบียนบ้านของนักเรียน
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-2">
+                    <label class="form-label">เลือกไฟล์สำเนาทะเบียนบ้านของบิดา</label>
+                    <input type="file" name="myFile3" class="form-control" >
+                    <div class="invalid-feedback">
+                        กรุณาอัพโหลดไฟล์สำเนาทะเบียนบ้านของบิดา
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-2">
+                    <label class="form-label">เลือกไฟล์สำเนาทะเบียนบ้านของมารดา</label>
+                    <input type="file" name="myFile4" class="form-control" >
+                    <div class="invalid-feedback">
+                        กรุณาอัพโหลดไฟล์สำเนาทะเบียนบ้านของมารดา
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-2">
+                    <label class="form-label">เลือกไฟล์สำเนาสูจิบัตร (สำหรับนักเรียนที่ไม่มีทะเบีบนบ้านของบิดาหรือมารดา)</label>
+                    <input type="file" name="myFile5" class="form-control" >
+                    <div class="invalid-feedback">
+                        กรุณาอัพโหลดไฟล์สำเนาสูจิบัตร
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-4">
+                    <button type="submit" class="btn btn-success btn-lg" id="btn">คลิกส่งเอกสารมอบตัวทั้งหมด</button>
+                </div>
+            </div>
+
+
+
+        </form>
+        <div id="output"></div>
+
+        <!-- Footer -->
+        <footer><br>
+            <div class="bg-primary">
+                <div class="container">
+                    <br>
+                    <div class="row">
+                        <div class="clo-lg-3 col-md-6">
+                            <h4 class="prompt text-white"><i class="fa fa-user-circle-o mr-3"></i> งานรับนักเรียนโรงเรียนสอาดเผดิมวิทยา
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ปิดแทก Footer -->
+    </div>
+</body>
+
+</html>
+
+<script>
+    (function () {
+        'use strict'
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }else{
+                        formSubmit()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+    let form = document.getElementById('myForm')
+
+    function formSubmit() {
+        event.preventDefault();
+        document.getElementById('btn').innerHTML = 'กำลังอัพโหลดไฟล์...';
+
+        google.script.run.withSuccessHandler(fileUploaded).uploadFiles(form);
+    }
+    function fileUploaded(status) {
+        document.getElementById('myForm').style.display = 'none';
+        document.getElementById('output').innerHTML = status;
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'อัพโหลดไฟล์เรียบร้อยแล้ว',
+            showConfirmButton: false,
+            timer: 2000
+        })
+    }
+
+</script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
